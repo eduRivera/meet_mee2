@@ -1,0 +1,6 @@
+<h1>LOCATIONS</h1>
+<ul>
+<% @locations.each do |location| %>
+	<li><%= location.name %><% if location.city %>-<%end%><%= location.city %><% if location.description %>-<%end%><%= location.description %></li>
+<% end %>
+</ul>
